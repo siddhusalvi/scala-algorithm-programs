@@ -41,7 +41,6 @@ object string_permutation {
         temp_char = data(pos)
         data(pos) = data(i)
         data(i) = temp_char
-
       }
     }
   }
