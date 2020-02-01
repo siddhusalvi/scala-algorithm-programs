@@ -1,12 +1,12 @@
 /*
 Filename: string_permutation
 Created: Siddhesh salvi
-Change history:1.2.2020 / Siddhhesh Salvi
+Change history:1.2.2020 / Siddhesh Salvi
 1. Write static functions to return all permutations of a String using iterative method and
 Recursion method. Check if the arrays returned by two string functions are equal.
  */
-import java.util
 
+import java.util
 import scala.collection.mutable
 object string_permutation {
   def main(args: Array[String]): Unit = {
@@ -61,7 +61,6 @@ object string_permutation {
     }
     print("\n"+data)
   }
-
 }
 
 
