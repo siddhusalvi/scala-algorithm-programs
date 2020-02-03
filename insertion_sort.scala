@@ -1,5 +1,5 @@
 /*
-Filename: string_permutation
+Filename: insertion_sort
 Created: Siddhesh Salvi
 Change history:3.2.2020 / Siddhesh Salvi
 
@@ -31,7 +31,7 @@ object insertion_sort {
       }
       }
     }
-  // Function to sort words by insertion sort 
+  // Function to sort words by insertion sort
   def sort_insertion(words: Array[String]):Unit ={
     for(i <- 1 until words.length){
       for(j <- i until 0 by -1){
