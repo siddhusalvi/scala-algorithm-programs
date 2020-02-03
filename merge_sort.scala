@@ -30,7 +30,6 @@ object merge_sort {
         print("\nEntered words are : "+words.mkString(" "))
         print("\nSorted data is : "+sort_merge(words,0,words.length-1).mkString(" "))
 
-
         flag = false
       }
       catch{
@@ -50,8 +49,8 @@ object merge_sort {
     } else{
       words
     }
-
   }
+
   //function to merge arrays
   def merge(words: Array[String], start:Int,mid:Int, end:Int): Array[String] ={
     var left:Int = start
@@ -79,7 +78,6 @@ object merge_sort {
       right += 1
       index += 1
     }
-
     index = 0
     for(i <-start to end){
       words(i) = temp(index)
