@@ -41,6 +41,6 @@ object bubble_sort {
         }
       }
     }
-    return data
+    data
   }
 }
