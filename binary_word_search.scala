@@ -1,6 +1,6 @@
 /*
-Filename: string_permutation
-Created: Siddhesh salvi
+Filename: binary_word_search
+Created: Siddhesh Salvi
 Change history:1.2.2020 / Siddhesh Salvi
 
 Problem Statement:
@@ -41,7 +41,7 @@ object binary_word_search {
       }
     }
   }
-  #Function to find word binary search techniques
+  //Function to find word binary search techniques
   def wordSearch(data:Array[String],word:String,min :Int ,max:Int)
   : Unit ={
     if(min > max){
