@@ -27,7 +27,7 @@ object message_demon{
       try{
         val regex_phone = "(0/91)?[7-9][0-9]{9}"
         var Msg = " Hello <<name>>, We have your fullname as <<full name>> in our system. your contact number is 91-<<number>>.\nPlease,let us know in case of any clarification Thank you BridgeLabz <<date>>."
-        var full_name, number, name, date : String = null
+        var full_name, number, name : String = null
         print("Enter your full name : ")
         full_name = scala.io.StdIn.readLine()
 
@@ -38,19 +38,17 @@ object message_demon{
         if(number.matches(regex_phone)){
           flag = false
         }
-        print("Enter date dd/MM/yyyy format :")
-        
-        date = scala.io.StdIn.readLine()
+
+        var date = new Date()
+        var fm = new SimpleDateFormat("dd/MM/yyyy")
+        var curDate: String = fm.format(date)
+
         Msg = Msg.replace("<<name>>",name)
         Msg = Msg.replace("<<full name>>",full_name)
         Msg = Msg.replace("<<number>>",number)
-        Msg = Msg.replace("<<date>>",date)
+        Msg = Msg.replace("<<date>>",curDate)
 
         println(Msg)
-
-
-
-
       }
       catch{
         case _=>print("Something went wrong Error occurred.")
