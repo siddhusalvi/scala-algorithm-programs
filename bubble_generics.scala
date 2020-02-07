@@ -1,5 +1,3 @@
-
-
 /*
 Filename: bubble_generics
 Created: Siddhesh Salvi
